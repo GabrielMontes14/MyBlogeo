@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "portfolio": "Portafolio",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "available": "Disponible para trabajar"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Gabriel Montes",
+    "role": "AI Automation Specialist & Software Developer",
+    "tagline": "Diseño sistemas que reemplazan operaciones manuales por procesos inteligentes, escalables y autónomos.",
+    "cta_contact": "Trabajemos juntos",
+    "cta_portfolio": "Ver proyectos",
+    "location": "Montería, Colombia",
+    "remote": "Disponible para trabajo remoto"
+  },
+  "services": {
+    "title": "Lo que construyo",
+    "subtitle": "Soluciones de automatización con IA que transforman cómo operan las empresas.",
+    "items": {
+      "automation": {
+        "title": "Automatización de procesos con IA",
+        "description": "Reemplazo operaciones manuales repetitivas con flujos de trabajo inteligentes que operan 24/7 sin intervención humana."
+      },
+      "multiagent": {
+        "title": "Arquitecturas multi-agente",
+        "description": "Diseño sistemas de agentes autónomos de IA que colaboran, toman decisiones y ejecutan tareas complejas en tiempo real."
+      },
+      "bots": {
+        "title": "Bots y apps personalizadas",
+        "description": "Desarrollo soluciones a medida: bots de Telegram, WhatsApp, Discord y aplicaciones web integradas con IA."
+      },
+      "workflow": {
+        "title": "Optimización de flujos de trabajo",
+        "description": "Analizo y rediseño procesos empresariales para reducir fricción, tiempo y costos operativos usando herramientas como N8N y Make."
+      }
+    }
+  },
+  "featured": {
+    "title": "Proyectos destacados",
+    "subtitle": "Una selección de los proyectos que mejor representan mi trabajo.",
+    "view_all": "Ver todos los proyectos",
+    "view_project": "Ver proyecto",
+    "source_code": "Código fuente"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "AI Automation Specialist & Intérprete bilingüe",
+    "bio": "Soy AI Automation Specialist & Software Developer, enfocado en diseñar sistemas que reemplazan operaciones manuales por procesos inteligentes, escalables y autónomos. Construyo arquitecturas de automatización basadas en agentes de IA (multi-agent systems) que analizan, toman decisiones y ejecutan tareas en tiempo real, permitiendo a las empresas operar 24/7 con mayor eficiencia, menor fricción y costos optimizados. También trabajo como intérprete bilingüe español–inglés, lo que me permite colaborar sin fricción con equipos y clientes internacionales.",
+    "skills_title": "Tecnologías y herramientas",
+    "experience_title": "Experiencia",
+    "download_cv": "Descargar CV",
+    "stats": {
+      "projects": "Proyectos",
+      "experience": "Años de experiencia",
+      "clients": "Clientes satisfechos"
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "Proyectos que demuestran mi capacidad de construir soluciones reales con IA y automatización.",
+    "all": "Todos",
+    "view_project": "Ver proyecto",
+    "source_code": "Código fuente",
+    "live_demo": "Demo en vivo",
+    "stack": "Stack"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Reflexiones, tutoriales y casos de uso sobre IA, automatización y desarrollo de software.",
+    "read_more": "Leer artículo",
+    "all_posts": "Todos los artículos",
+    "categories": {
+      "all": "Todos",
+      "ai": "IA",
+      "automation": "Automatización",
+      "development": "Desarrollo"
+    },
+    "published": "Publicado el",
+    "min_read": "min de lectura",
+    "back_to_blog": "Volver al blog"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "¿Tienes un proyecto en mente? Me encantaría escucharte. Respondo en menos de 24 horas.",
+    "form": {
+      "name": "Tu nombre",
+      "name_placeholder": "Gabriel Montes",
+      "email": "Correo electrónico",
+      "email_placeholder": "tu@email.com",
+      "subject": "Asunto",
+      "subject_placeholder": "¿En qué puedo ayudarte?",
+      "message": "Mensaje",
+      "message_placeholder": "Cuéntame sobre tu proyecto...",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado! Te respondo pronto.",
+      "error": "Hubo un error. Por favor intenta de nuevo."
+    },
+    "info": {
+      "email_label": "Email",
+      "location_label": "Ubicación",
+      "availability_label": "Disponibilidad",
+      "availability_value": "Disponible para proyectos remotos en Upwork",
+      "response_label": "Tiempo de respuesta",
+      "response_value": "Menos de 24 horas"
+    }
+  },
+  "footer": {
+    "tagline": "Construyendo el futuro con IA y automatización.",
+    "rights": "Todos los derechos reservados.",
+    "links": {
+      "title": "Navegación"
+    },
+    "social": {
+      "title": "Redes"
+    }
+  },
+  "theme": {
+    "toggle_light": "Cambiar a modo claro",
+    "toggle_dark": "Cambiar a modo oscuro"
+  },
+  "language": {
+    "switch_to": "Switch to English"
+  },
+  "projects": {
+    "oceanman": {
+      "description": "Plataforma de automatización inteligente con agentes de IA integrados en N8N. Orquesta flujos de trabajo autónomos conectados a Supabase y desplegados en Railway."
+    },
+    "facturabot": {
+      "description": "Bot inteligente para automatización de facturación y gestión de documentos financieros. Reduce el tiempo de procesamiento en un 90% con verificación automática."
+    },
+    "portfolio": {
+      "description": "Portfolio personal desarrollado con Next.js 14, TypeScript, Tailwind CSS y next-intl. Diseño moderno con soporte completo para modo oscuro e internacionalización."
+    }
+  },
+  "not_found": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que buscas no existe.",
+    "back_home": "Volver al inicio"
+  }
+}

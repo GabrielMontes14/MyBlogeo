@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact",
+    "available": "Available for work"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Gabriel Montes",
+    "role": "AI Automation Specialist & Software Developer",
+    "tagline": "I build intelligent systems that replace manual operations with scalable, autonomous processes.",
+    "cta_contact": "Let's work together",
+    "cta_portfolio": "See my work",
+    "location": "Montería, Colombia",
+    "remote": "Available for remote work"
+  },
+  "services": {
+    "title": "What I build",
+    "subtitle": "AI-powered automation solutions that transform how businesses operate.",
+    "items": {
+      "automation": {
+        "title": "AI Process Automation",
+        "description": "I replace repetitive manual operations with intelligent workflows that run 24/7 without human intervention."
+      },
+      "multiagent": {
+        "title": "Multi-Agent System Architecture",
+        "description": "I design autonomous AI agent systems that collaborate, make decisions, and execute complex tasks in real time."
+      },
+      "bots": {
+        "title": "Custom Bots & App Development",
+        "description": "I build tailored solutions: Telegram, WhatsApp, Discord bots, and web applications integrated with AI."
+      },
+      "workflow": {
+        "title": "Digital Workflow Optimization",
+        "description": "I analyze and redesign business processes to reduce friction, time, and operational costs using tools like N8N and Make."
+      }
+    }
+  },
+  "featured": {
+    "title": "Featured projects",
+    "subtitle": "A selection of projects that best represent my work.",
+    "view_all": "View all projects",
+    "view_project": "View project",
+    "source_code": "Source code"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "AI Automation Specialist & Bilingual Interpreter",
+    "bio": "I'm an AI Automation Specialist & Software Developer focused on designing systems that replace manual operations with intelligent, scalable, and autonomous processes. I build multi-agent AI architectures that analyze, decide and execute tasks in real time, enabling businesses to operate 24/7 with greater efficiency and optimized costs. I also work as an English–Spanish interpreter, allowing me to collaborate seamlessly with international teams and clients.",
+    "skills_title": "Technologies & tools",
+    "experience_title": "Experience",
+    "download_cv": "Download CV",
+    "stats": {
+      "projects": "Projects",
+      "experience": "Years of experience",
+      "clients": "Happy clients"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Projects showcasing my ability to build real-world solutions with AI and automation.",
+    "all": "All",
+    "view_project": "View project",
+    "source_code": "Source code",
+    "live_demo": "Live demo",
+    "stack": "Stack"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts, tutorials, and use cases on AI, automation, and software development.",
+    "read_more": "Read article",
+    "all_posts": "All articles",
+    "categories": {
+      "all": "All",
+      "ai": "AI",
+      "automation": "Automation",
+      "development": "Development"
+    },
+    "published": "Published on",
+    "min_read": "min read",
+    "back_to_blog": "Back to blog"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Have a project in mind? I'd love to hear from you. I reply within 24 hours.",
+    "form": {
+      "name": "Your name",
+      "name_placeholder": "John Smith",
+      "email": "Email address",
+      "email_placeholder": "you@email.com",
+      "subject": "Subject",
+      "subject_placeholder": "How can I help you?",
+      "message": "Message",
+      "message_placeholder": "Tell me about your project...",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent! I'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "email_label": "Email",
+      "location_label": "Location",
+      "availability_label": "Availability",
+      "availability_value": "Available for remote projects on Upwork",
+      "response_label": "Response time",
+      "response_value": "Less than 24 hours"
+    }
+  },
+  "footer": {
+    "tagline": "Building the future with AI and automation.",
+    "rights": "All rights reserved.",
+    "links": {
+      "title": "Navigation"
+    },
+    "social": {
+      "title": "Social"
+    }
+  },
+  "theme": {
+    "toggle_light": "Switch to light mode",
+    "toggle_dark": "Switch to dark mode"
+  },
+  "language": {
+    "switch_to": "Cambiar a Español"
+  },
+  "projects": {
+    "oceanman": {
+      "description": "Intelligent automation platform with AI agents integrated into N8N. Orchestrates autonomous workflows connected to Supabase and deployed on Railway."
+    },
+    "facturabot": {
+      "description": "Intelligent bot for invoice automation and financial document management. Reduces processing time by 90% with automatic verification."
+    },
+    "portfolio": {
+      "description": "Personal portfolio built with Next.js 14, TypeScript, Tailwind CSS and next-intl. Modern design with full dark mode and internationalization support."
+    }
+  },
+  "not_found": {
+    "title": "Page not found",
+    "description": "Sorry, the page you're looking for doesn't exist.",
+    "back_home": "Back to home"
+  }
+}
