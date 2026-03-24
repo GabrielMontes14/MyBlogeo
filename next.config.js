@@ -29,11 +29,11 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'", // unsafe-eval needed by Next.js dev/Framer Motion
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://vitals.vercel-scripts.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: blob: https://images.unsplash.com https://avatars.githubusercontent.com",
-      "connect-src 'self' https://formspree.io",
+      "connect-src 'self' https://formspree.io https://va.vercel-scripts.com https://vitals.vercel-scripts.com",
       "frame-ancestors 'none'",
     ].join('; '),
   },
