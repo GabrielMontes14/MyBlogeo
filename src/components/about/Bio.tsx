@@ -22,7 +22,7 @@ export default async function Bio({ locale }: BioProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Avatar + stats */}
           <AnimatedSection direction="right">
-            <div className="relative">
+            <div className="flex flex-col">
               {/* Avatar */}
               <div className="relative w-64 h-64 mx-auto lg:mx-0 rounded-3xl overflow-hidden border-2 border-violet-500/30 shadow-xl shadow-violet-500/10">
                 <Image
@@ -35,7 +35,7 @@ export default async function Bio({ locale }: BioProps) {
               </div>
 
               {/* Location badge */}
-              <div className="absolute bottom-0 right-0 lg:right-auto lg:left-48 bg-card border border-border rounded-2xl p-3 shadow-lg">
+              <div className="mt-4 inline-flex bg-card border border-border rounded-2xl p-3 shadow-lg">
                 <div className="flex items-center gap-2 text-sm">
                   <MapPin className="w-4 h-4 text-violet-500" />
                   <span className="font-medium">Montería, Colombia</span>
@@ -43,7 +43,7 @@ export default async function Bio({ locale }: BioProps) {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 mt-8">
+              <div className="grid grid-cols-3 gap-4 mt-4">
                 {stats.map((stat) => (
                   <div key={stat.label} className="text-center p-4 rounded-2xl bg-card border border-border">
                     <div className="text-2xl font-black gradient-text mb-1">{stat.value}</div>
