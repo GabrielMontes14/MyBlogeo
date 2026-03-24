@@ -2,9 +2,18 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Providers } from '@/components/ui/Providers';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+});
 
 const locales = ['es', 'en'];
 
@@ -64,12 +73,18 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <Providers>
-        <Navbar locale={locale} />
-        <main>{children}</main>
-        <Footer locale={locale} />
-      </Providers>
-    </NextIntlClientProvider>
+    <html lang={locale} suppressHydrationWarning>
+      <body className={`${inter.className} min-h-screen bg-background antialiased`} suppressHydrationWarning>
+        <NextIntlClientProvider messages={messages}>
+          <Providers>
+            <Navbar locale={locale} />
+            <main>{children}</main>
+            <Footer locale={locale} />
+          </Providers>
+        </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
+      </body>
+    </html>
   );
 }
