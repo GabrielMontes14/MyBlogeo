@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { Providers } from '@/components/ui/Providers';
+import { LangSetter } from '@/components/ui/LangSetter';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
@@ -60,6 +61,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <LangSetter locale={locale} />
       <Providers>
         <Navbar locale={locale} />
         <main>{children}</main>
