@@ -1,5 +1,6 @@
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import { MapPin, ExternalLink } from 'lucide-react';
+import { MapPin, ExternalLink, Download } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 
 interface BioProps {
@@ -23,12 +24,14 @@ export default async function Bio({ locale }: BioProps) {
           <AnimatedSection direction="right">
             <div className="relative">
               {/* Avatar */}
-              <div className="relative w-64 h-64 mx-auto lg:mx-0 rounded-3xl overflow-hidden border-2 border-border">
-                <div className="w-full h-full bg-gradient-to-br from-blue-500/30 via-violet-500/30 to-purple-600/30 flex items-center justify-center">
-                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center">
-                    <span className="text-4xl font-black text-white">G</span>
-                  </div>
-                </div>
+              <div className="relative w-64 h-64 mx-auto lg:mx-0 rounded-3xl overflow-hidden border-2 border-violet-500/30 shadow-xl shadow-violet-500/10">
+                <Image
+                  src="/images/gabriel-profile.png"
+                  alt="Gabriel Montes"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
 
               {/* Location badge */}
@@ -69,6 +72,14 @@ export default async function Bio({ locale }: BioProps) {
                 >
                   <ExternalLink className="w-3.5 h-3.5" />
                   Contactar
+                </a>
+                <a
+                  href="/gabriel-montes-cv.pdf"
+                  download
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border text-sm font-semibold hover:bg-muted transition-all hover:-translate-y-0.5"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  {t('download_cv')}
                 </a>
                 <a
                   href="https://www.linkedin.com/in/gabriel-montes-diaz-93a345374/"

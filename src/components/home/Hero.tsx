@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { ArrowRight, Github, Linkedin, MapPin, Mail } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, MapPin, Mail, ExternalLink } from 'lucide-react';
 
 interface HeroProps {
   locale: string;
@@ -100,6 +100,15 @@ export default function Hero({ locale }: HeroProps) {
           >
             <Linkedin className="w-4 h-4 group-hover:text-blue-500 transition-colors" />
             LinkedIn
+          </a>
+          <a
+            href="https://www.upwork.com/freelancers/~010d3322f0c682c3a9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors group"
+          >
+            <ExternalLink className="w-4 h-4 group-hover:text-emerald-500 transition-colors" />
+            Upwork
           </a>
           <a
             href="mailto:gabo.montes.diaz@gmail.com"

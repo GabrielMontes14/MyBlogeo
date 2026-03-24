@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
-import { Github, Linkedin, Mail, MapPin, Zap } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Zap, ExternalLink } from 'lucide-react';
 
 interface FooterProps {
   locale: string;
@@ -20,6 +20,7 @@ export default async function Footer({ locale }: FooterProps) {
   const socials = [
     { href: 'https://github.com/GabrielMontes14', icon: Github, label: 'GitHub' },
     { href: 'https://www.linkedin.com/in/gabriel-montes-diaz-93a345374/', icon: Linkedin, label: 'LinkedIn' },
+    { href: 'https://www.upwork.com/freelancers/~010d3322f0c682c3a9', icon: ExternalLink, label: 'Upwork' },
     { href: 'mailto:gabo.montes.diaz@gmail.com', icon: Mail, label: 'Email' },
   ];
 

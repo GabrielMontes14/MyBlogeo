@@ -66,6 +66,7 @@ export default function ContactForm() {
             type="text"
             name="name"
             required
+            maxLength={100}
             value={form.name}
             onChange={handleChange}
             placeholder={t('name_placeholder')}
@@ -92,6 +93,7 @@ export default function ContactForm() {
           type="text"
           name="subject"
           required
+          maxLength={200}
           value={form.subject}
           onChange={handleChange}
           placeholder={t('subject_placeholder')}
@@ -105,6 +107,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
+          maxLength={2000}
           value={form.message}
           onChange={handleChange}
           placeholder={t('message_placeholder')}

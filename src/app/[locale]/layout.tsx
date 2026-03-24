@@ -14,14 +14,33 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const isEs = locale === 'es';
+  const description = isEs
+    ? 'AI Automation Specialist & Software Developer. Diseño sistemas inteligentes que automatizan procesos empresariales con IA y agentes autónomos.'
+    : 'AI Automation Specialist & Software Developer. I build intelligent systems that automate business processes with AI and autonomous agents.';
+
   return {
     title: {
       default: 'Gabriel Montes | AI Automation Specialist',
       template: '%s | Gabriel Montes',
     },
-    description: isEs
-      ? 'AI Automation Specialist & Software Developer. Diseño sistemas inteligentes que automatizan procesos empresariales.'
-      : 'AI Automation Specialist & Software Developer. I build intelligent systems that automate business processes.',
+    description,
+    keywords: isEs
+      ? ['automatización IA', 'agentes IA', 'N8N', 'Python', 'freelance Colombia', 'Upwork', 'software developer']
+      : ['AI automation', 'AI agents', 'N8N', 'Python', 'freelance Colombia', 'Upwork', 'software developer'],
+    authors: [{ name: 'Gabriel Montes', url: 'https://github.com/GabrielMontes14' }],
+    creator: 'Gabriel Montes',
+    openGraph: {
+      type: 'website',
+      locale: locale === 'es' ? 'es_CO' : 'en_US',
+      siteName: 'Gabriel Montes',
+      title: 'Gabriel Montes | AI Automation Specialist',
+      description,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Gabriel Montes | AI Automation Specialist',
+      description,
+    },
     alternates: {
       languages: {
         es: '/es',

@@ -33,7 +33,7 @@ export default async function ContactPage({ params: { locale } }: ContactPagePro
       icon: ExternalLink,
       label: t('info.availability_label'),
       value: t('info.availability_value'),
-      href: 'https://www.upwork.com',
+      href: 'https://www.upwork.com/freelancers/~010d3322f0c682c3a9',
     },
     {
       icon: Clock,
@@ -45,6 +45,7 @@ export default async function ContactPage({ params: { locale } }: ContactPagePro
   const socials = [
     { icon: Github, label: 'GitHub', href: 'https://github.com/GabrielMontes14' },
     { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/gabriel-montes-diaz-93a345374/' },
+    { icon: ExternalLink, label: 'Upwork', href: 'https://www.upwork.com/freelancers/~010d3322f0c682c3a9' },
     { icon: Mail, label: 'Email', href: 'mailto:gabo.montes.diaz@gmail.com' },
   ];
 
